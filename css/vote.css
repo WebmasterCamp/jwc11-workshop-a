@@ -1,6 +1,10 @@
 html,
 body {
     height: 100%;
+    background: url("../assets/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
 }
 
 body {
@@ -29,4 +33,87 @@ body {
 
 .submit:hover {
     box-shadow: 0px 15px 20px rgba(252, 84, 58, 0.4);
+}
+
+.fooditem {
+    width: 100%;
+    background-color: orange;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.fooditem:focus {
+    background-color: red;
+}
+
+.fooditem:hover {
+    background-color: black;
+}
+
+/* Customize the label (the container) */
+.foodforvote {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.foodforvote input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.foodforvote:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.foodforvote input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.foodforvote input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.foodforvote .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
 }
