@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
+    <!-- Title -->
+    <title>Fav. Food | เลือกที่ใช่ ได้ที่อยากกิน</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Fav. Food | เลือกที่ใช่ ได้ที่อยากกิน</title>
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -24,90 +25,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <style>
-        li {
-            list-style-type: none;
-        }
-
-        nav {
-            background-color: transparent;
-        }
-
-        #slogan {
-            margin-top: 3em;
-        }
-
-        h1 {
-            font-size: 70px;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        #kapao {
-            width: 120%;
-            margin-top: 3em;
-        }
-
-        #logo {
-            margin-top: 3em;
-            width: 100%;
-        }
-
-        .table {
-            margin-top: 2em;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        th {
-            color: #fc543a;
-        }
-
-        tr {
-            color: gray;
-        }
-
-        .bg {
-            background-color: white;
-            border-radius: 30px;
-        }
-
-        .lft {
-            background-color: white;
-            color: #fc543a;
-            padding: 20px;
-            border-radius: 20px;
-            font-size: 30px;
-            width: 200px;
-        }
-
-        .lft:hover {
-            color: black;
-        }
-
-        .rht {
-            background-color: #fc543a;
-            color: white;
-            padding: 20px;
-            border-radius: 20px;
-            font-size: 30px;
-            width: 200px;
-        }
-
-        .rht:hover {
-            color: black;
-        }
-    </style>
+    <!-- Optional CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
 
-    <!--slogan + draftpic-->
+    <!-- Slogan + Food -->
     <div class="container">
         <div class="row">
             <div class="col-2 mx-auto text-center">
@@ -128,19 +53,18 @@
                 <img id="kapao" src="assets/kapao.png">
             </div>
         </div><br>
+        <!-- Button -->
         <div class="row justify-content-center">
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="vote.html" class="btn lft" role="button" aria-disabled="true">โหวต</a>
-                <a href="request.html" class="btn rht" role="button" aria-disabled="true">รีเควส</a>
+            <div class="btn-group" role="group">
+                <a href="vlogin.html" class="btn lft" role="button">โหวต</a>
+                <a href="rlogin.html" class="btn rht" role="button">รีเควส</a>
             </div>
         </div>
     </div>
 
-    <br><br>
-
-    <!--food table-->
-    <div class="container">
-        <div class="row justify-content-center">
+    <!-- Lunch Table -->
+    <div class="container mt-5 mb-5">
+        <div class="row ">
             <div class="bg">
                 <table class="table">
                     <thead>
@@ -165,13 +89,8 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
     </div>
-
-
-
-
 </body>
 
 </html>
