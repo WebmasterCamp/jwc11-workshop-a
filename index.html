@@ -33,30 +33,41 @@
             background-color: transparent;
         }
 
-        /*
-        body {
-            background-color: red;
-        }*/
-
         #slogan {
-            margin-top: 12em;
+            margin-top: 10em;
         }
 
         h1 {
             font-size: 70px;
+            font-weight: 600;
         }
 
         .table {
-            margin-top: 3em;
+            margin-top: 2em;
             font-size: 20px;
+            text-align: center;
+        }
+
+        th {
+            color: #fc543a;
+        }
+
+        tr {
+            color: gray;
+        }
+
+        .bg {
+            background-color: white;
+            border-radius: 30px;
         }
 
         .lft {
-            background-color: blue;
-            color: white;
+            background-color: white;
+            color: #fc543a;
             padding: 20px;
-            border-radius: 20%;
+            border-radius: 20px;
             font-size: 30px;
+            width: 200px;
         }
 
         .lft:hover {
@@ -64,11 +75,12 @@
         }
 
         .rht {
-            background-color: blueviolet;
+            background-color: #fc543a;
             color: white;
             padding: 20px;
-            border-radius: 20%;
+            border-radius: 20px;
             font-size: 30px;
+            width: 200px;
         }
 
         .rht:hover {
@@ -82,15 +94,15 @@
 <body>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Fav.Food</a>
+        <a style="color:white;" class="navbar-brand" href="#">Fav.Food</a>
     </nav>
 
     <!--slogan + draftpic-->
     <div class="container">
         <div class="row">
             <div class="col-6" id="slogan">
-                <h1>"เลือกที่ใช่</h1><br>
-                <h1> ได้ที่อยากกิน"</h1><br>
+                <h1>"เลือกที่ใช่</h1>
+                <h1 style="text-align: right">ได้ที่อยากกิน"</h1><br>
                 <p>ความสุขที่ได้มาโรงเรียน ความสุขที่เราได้เลือกอาหารกลางวัน ไม่ต้องกินอาหารเดิมๆ
                     ไม่ต้องกินอาหารที่ไม่ชอบ
                     เพียงแค่ช่วยกันส่งเมนูโปรดของคุณ และช่วยกันโหวตอาหารที่อยากกินที่สุด
@@ -109,31 +121,36 @@
         </div>
     </div>
 
+    <br><br><br>
+
     <!--food table-->
     <div class="container">
-        <div class="row">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th style="width: 55px; height: 30px"></th>
-                        <th scope="col" style="width: 500px">จันทร์</th>
-                        <th scope="col" style="width: 500px">อังคาร</th>
-                        <th scope="col" style="width: 500px">พุธ</th>
-                        <th scope="col" style="width: 500px">พฤหัสบดี</th>
-                        <th scope="col" style="width: 500px">ศุกร์</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>กระเพราไก่ไข่ดาว</td>
-                        <td>ทงคัตสึ</td>
-                        <td>ข้าวผัดอเมริกัน</td>
-                        <td>ราดหน้าเส้นใหญ่</td>
-                        <td>ข้าวเหนียว ไก่ทอด ส้มตำ</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row justify-content-center">
+            <div class="bg">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px; height: 10px"></th>
+                            <th scope="col" style="width: 300px">จันทร์</th>
+                            <th scope="col" style="width: 300px">อังคาร</th>
+                            <th scope="col" style="width: 300px">พุธ</th>
+                            <th scope="col" style="width: 300px">พฤหัสบดี</th>
+                            <th scope="col" style="width: 300px">ศุกร์</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>ราดหน้าหมู<br>ทับทิมกรอบ</td>
+                            <td>ข้าวหมกไก่<br>บัวลอย</td>
+                            <td>ส้มตำไก่ย่าง<br>ฝรั่ง</td>
+                            <td>หมูผัดผงกระหรี่<br>เฉาก๊วย</td>
+                            <td>หมูกรอบผัดพริกแกง<br>วุ้นมะพร้าว</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
 
