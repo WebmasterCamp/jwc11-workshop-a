@@ -2,5 +2,8 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    background: url("../assets/bg.jpg")
+    background: url("../assets/bg.jpg");
+    background-size: cover;
+    color: #ffffff;
+
 }
