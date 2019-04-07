@@ -39,11 +39,19 @@
         }*/
 
         #slogan {
-            margin-top: 15em;
+            margin-top: 12em;
         }
 
         h1 {
             font-size: 70px;
+        }
+
+        .table {
+            margin-top: 5em;
+        }
+
+        .button {
+            background-color: blue;
         }
     </style>
 </head>
@@ -51,32 +59,61 @@
 <body>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Submit Request</a>
-                <a class="nav-item nav-link" href="#">Vote</a>
-            </div>
-        </div>
+        <a class="navbar-brand" href="#">Fav.Food</a>
     </nav>
 
     <!--slogan + draftpic-->
     <div class="container">
         <div class="row">
-            <div class="col-7" id="slogan">
-                <h1>สโลแกน</h1>
+            <div class="col-6" id="slogan">
+                <h1>"เลือกที่ใช่</h1><br>
+                <h1> ได้ที่อยากกิน"</h1><br>
+                <p>ความสุขที่ได้มาโรงเรียน ความสุขที่เราได้เลือกอาหารกลางวัน ไม่ต้องกินอาหารเดิมๆ
+                    ไม่ต้องกินอาหารที่ไม่ชอบ
+                    เพียงแค่ช่วยกันส่งเมนูโปรดของคุณ และช่วยกันโหวตอาหารที่อยากกินที่สุด
+                    แค่นี้มื้อเที่ยงจะไม่น่าเบื่ออีกต่อไป</p><br>
+                <b>#ช่วยโรงเรียนคิดเมนูอาหาร</b>
             </div>
-            <div class="col-5" id="draftpic">
+            <div class="col-6" id="draftpic">
                 <!--image source-->
             </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn">Left</button>
+                <button type="button" class="btn">Right</button>
+            </div>
         </div>
-
     </div>
+
+    <!--food table-->
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width: 55px; height: 30px"></th>
+                        <th scope="col" style="width: 500px">Mon</th>
+                        <th scope="col" style="width: 500px">Tue</th>
+                        <th scope="col" style="width: 500px">Wed</th>
+                        <th scope="col" style="width: 500px">Thu</th>
+                        <th scope="col" style="width: 500px">Fri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>กระเพราไก่ไข่ดาว</td>
+                        <td>ทงคัตสึ</td>
+                        <td>ข้าวผัดอเมริกัน</td>
+                        <td>ราดหน้าเส้นใหญ่</td>
+                        <td>ข้าวเหนียว ไก่ทอด ส้มตำ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 
 
 
