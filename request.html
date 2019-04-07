@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Sign in</title>
+    <title>Hello, world!</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,47 +25,57 @@
         crossorigin="anonymous"></script>
 
     <style>
-        html,
-        body {
-            height: 100%;
+        li {
+            list-style-type: none;
         }
 
-        body {
-            display: flex;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f5f5f5;
+        nav {
+            background-color: transparent;
         }
 
-        .form-signin {
-            width: 100%;
-            max-width: 330px;
-            padding: 15px;
-            margin: auto;
-        }
+        /*
+        body {
+            background-color: red;
+        }*/
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Submit Request</a>
+                <a class="nav-item nav-link" href="#">Vote</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
-            <div class="col-5 mx-auto">
-                <h1>เข้าสู่ระบบ</h1>
+            <div class="col-5 mx-auto text-center">
+                <h1>เสนออาหาร</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 mx-auto text-center">
                 <form>
                     <div class="form-group">
-                        <label for="stuid">เลขประจำตัวนักเรียน</label>
-                        <input type="text" class="form-control" id="stuid">
-                    </div>
-                    <div class="form-group">
-                        <label for="3did">เลขประจำตัวประชาชน 3 หลักหลัง</label>
-                        <input type="text*" class="form-control" id="3did">
+                        <input style="text-align:center;" type="text" class="form-control" id="rqfood"
+                            placeholder="อาหารที่เสนอ">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
