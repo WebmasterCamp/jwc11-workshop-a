@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Sign in</title>
+    <title>เข้าสู่ระบบ</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -23,48 +23,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f5f5f5;
-        }
-
-        .form-signin {
-            width: 100%;
-            max-width: 330px;
-            padding: 15px;
-            margin: auto;
-        }
-    </style>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-5 mx-auto">
-                <h1>เข้าสู่ระบบ</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="stuid">เลขประจำตัวนักเรียน</label>
-                        <input type="text" class="form-control" id="stuid">
-                    </div>
-                    <div class="form-group">
-                        <label for="3did">เลขประจำตัวประชาชน 3 หลักหลัง</label>
-                        <input type="text*" class="form-control" id="3did">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+            <div class="col-6 mx-auto">
+                <img src="assets/logo.png" alt="" class="mb-5">
+                <div class="form-group">
+                    <label for="stuid">เลขประจำตัวนักเรียน</label>
+                    <input type="text" class="form-control loginfield" id="stuid">
+                </div>
+                <div class="form-group">
+                    <label for="3did">เลขประจำตัวประชาชน 3 หลักหลัง</label>
+                    <input type="text" class="form-control loginfield" id="3did">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mx-auto text-center">
+                <button type="submit" class="btn loginsubmit">เข้าสู่ระบบ</button>
             </div>
         </div>
     </div>
