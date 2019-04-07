@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:300,400,600');
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: 'Kanit', sans-serif;
     background: url("../assets/bg.jpg");
     background-size: cover;
     color: #ffffff;
-
 }
