@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h1 {
+            font-size: 50px;
+            margin-top: 2em;
+        }
+
+        h4 {
+            margin-top: 2em;
+        }
+
+        .bg {
+            background-color: white;
+            border-radius: 30px;
+        }
+
+        .textarea {
+            padding: 20px;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            color: whitesmoke;
+            width: 60%;
+        }
+
+        .textarea:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: whitesmoke;
+        }
+
+        .textarea::placeholder {
+            color: black;
+        }
+
+        .feedsubmit {
+            width: 30%;
+            background-color: #ffffff;
+            border-radius: 50px;
+            color: #FC543A;
+            font-weight: 600;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 20pt;
+        }
+
+        .feedsubmit:hover {
+            box-shadow: 0px 15px 20px rgba(252, 84, 58, 0.4);
+        }
+
+        .table {
+            margin-top: 2em;
+            width: 40%;
+            color: black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        th {
+            color: white;
+        }
+
+        tr {
+            color: black;
+        }
+
+        thead {
+            background-color: #42000b;
+
+            border-top-left-radius: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        tbody {
+            background-color: whitesmoke;
+            opacity: 0.8;
+            font-size: 17px;
+            text-align: right;
+        }
+
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>ฟีดแบ็ค</h1>
+        </div>
+        <div class="row justify-content-center">
+            <h4>ให้เรทอาหาร</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center mt-2">
+            <div class="col-10 mx-auto text-center">
+                <img src="assets/react.png">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <textarea class="form-group textarea" type="text" placeholder="comment.."></textarea>
+        </div>
+        <div class="row justify-content-center">
+            <a href="feedback.html" class="btn feedsubmit" role="button" aria-disabled="true">กดเพื่อส่ง</a>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 100px">ความคิดเห็นวันนี้</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>อาหารวันนี้อร่อยมากค่ะ อยากกินบ่อย ๆ เลยค่ะ</td>
+                    </tr>
+                    <tr>
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>แม่ครัวทำน้ำปลาหกหรือเปล่าคะ ทำไมวันนี้อาหารเค็มจัง</td>
+                    </tr>
+                    <tr>
+                        <td><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>จะดีกว่านี้ ถ้าของหวานเป็นบัวลอยน้ำขิง</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
