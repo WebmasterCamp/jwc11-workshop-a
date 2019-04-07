@@ -34,12 +34,26 @@
         }
 
         #slogan {
-            margin-top: 10em;
+            margin-top: 3em;
         }
 
         h1 {
             font-size: 70px;
             font-weight: 600;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #kapao {
+            width: 120%;
+            margin-top: 3em;
+        }
+
+        #logo {
+            margin-top: 3em;
+            width: 100%;
         }
 
         .table {
@@ -92,14 +106,15 @@
 </head>
 
 <body>
-    <!--nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a style="color:white;" class="navbar-brand" href="#">Fav.Food</a>
-    </nav>
 
     <!--slogan + draftpic-->
     <div class="container">
         <div class="row">
+            <div class="col-2 mx-auto text-center">
+                <img id="logo" src="assets/logo.png">
+            </div>
+        </div>
+        <div class="row mt-2">
             <div class="col-6" id="slogan">
                 <h1>"เลือกที่ใช่</h1>
                 <h1 style="text-align: right">ได้ที่อยากกิน"</h1><br>
@@ -110,18 +125,18 @@
                 <b>#ช่วยโรงเรียนคิดเมนูอาหาร</b>
             </div>
             <div class="col-6" id="draftpic">
-                <!--image source-->
+                <img id="kapao" src="assets/kapao.png">
             </div>
         </div><br>
         <div class="row justify-content-center">
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn lft">โหวต</button>
-                <button type="button" class="btn rht">รีเควส</button>
+                <a href="vote.html" class="btn lft" role="button" aria-disabled="true">โหวต</a>
+                <a href="request.html" class="btn rht" role="button" aria-disabled="true">รีเควส</a>
             </div>
         </div>
     </div>
 
-    <br><br><br>
+    <br><br>
 
     <!--food table-->
     <div class="container">
