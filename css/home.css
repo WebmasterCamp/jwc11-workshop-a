@@ -1,0 +1,67 @@
+#slogan {
+    margin-top: 3em;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+}
+
+#kapao {
+    width: 120%;
+    margin-top: 3em;
+}
+
+#logo {
+    margin-top: 3em;
+    width: 100%;
+}
+
+.table {
+    margin-top: 2em;
+    font-size: 20px;
+    text-align: center;
+}
+
+th {
+    color: #fc543a;
+}
+
+tr {
+    color: gray;
+}
+
+.bg {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.lft {
+    background-color: white;
+    color: #fc543a;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 200px;
+}
+
+.lft:hover {
+    color: black;
+}
+
+.rht {
+    background-color: #fc543a;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 200px;
+}
+
+.rht:hover {
+    color: black;
+}
